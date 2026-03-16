@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+:root {
+  --bg-color: #e0f2ff;       /* light mode background */
+  --text-color: #0f172a;     /* general text */
+  --title-color: #000000;    /* card title / header color in light mode */
+  --particle-color: rgba(100,180,255,0.8);
+  --line-color: rgba(100,180,255,0.5);
+}
+
+[data-theme="dark"] {
+  --bg-color: #0f172a;       /* dark mode background */
+  --text-color: #e0f2ff;     /* general text */
+  --title-color: #ffffff;    /* card title / header color in dark mode */
+  --particle-color: rgba(180,220,255,0.8);
+  --line-color: rgba(180,220,255,0.5);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #7788c4;
+    --foreground: #0e0841;
+  }
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.tab {
+  padding: 8px 14px;
+  border-radius: 8px;
+  transition: 0.2s;
+  color: var(--text-color);
+}
+
+.tab:hover {
+  background: rgba(100,180,255,0.2);
+}
+
+.activeTab {
+  background: rgba(100,180,255,0.3);
+  color: var(--text-color);
+}
+
+.card {
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid rgba(100,180,255,0.3);
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(5px);
+}
