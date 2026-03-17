@@ -232,7 +232,7 @@ export default function Home() {
           <section className="space-y-4">
             <div className="card">
               <p className="font-medium text-lg">Java Software Engineer - Keylane</p>
-              <p className="text-m">TODO</p>
+              <p className="text-m">Responsible for feature development, bugfixing and system testing</p>
               <p className="text-sm">2024 - Present</p>
             </div>
             <div className="card">
